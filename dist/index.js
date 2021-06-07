@@ -96,7 +96,7 @@ var OtaManager = /** @class */ (function () {
                                 this.options.repromptIntervalMs) {
                             return [2 /*return*/];
                         }
-                        return [4 /*yield*/, showConfirmAlert(this.options.titleText, this.options.textLines.join("\n"), this.options.yesButtonText, this.options.noButtonText)];
+                        return [4 /*yield*/, showConfirmAlert(this.options.titleText, this.options.textLines.join("\n"), this.options.yesButtonText)];
                     case 1:
                         restartConfirm = _a.sent();
                         this.lastPrompt = new Date();
@@ -146,7 +146,6 @@ var OtaManager = /** @class */ (function () {
         }); };
         var hourInMS = 1000 * 60 * 60;
         var defaultOptions = {
-            noButtonText: "Not now",
             yesButtonText: "Restart",
             textLines: ["An update is ready", "Restart your app to start using it"],
             titleText: "New Version",
