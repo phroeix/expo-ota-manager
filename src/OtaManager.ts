@@ -14,7 +14,6 @@ export const showConfirmAlert = async (
       message,
       [
         { text: confirmText, onPress: () => resolve(true) },
-        { text: cancelText, onPress: () => resolve(false), style: "cancel" },
       ],
       { onDismiss: () => resolve(false) }
     );
