@@ -5,8 +5,7 @@ import { IOptions } from "./IOptions";
 export const showConfirmAlert = async (
   title: string,
   message?: string,
-  confirmText = "Confirm",
-  cancelText = "Cancel"
+  confirmText = "Confirm"
 ) =>
   new Promise<boolean>((resolve) => {
     Alert.alert(
@@ -59,8 +58,7 @@ export default class OtaManager {
       const restartConfirm = await showConfirmAlert(
         this.options.titleText,
         this.options.textLines.join("\n"),
-        this.options.yesButtonText,
-        this.options.noButtonText
+        this.options.yesButtonText
       );
 
       this.lastPrompt = new Date();
