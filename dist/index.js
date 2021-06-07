@@ -146,11 +146,11 @@ var OtaManager = /** @class */ (function () {
         }); };
         var hourInMS = 1000 * 60 * 60;
         var defaultOptions = {
-            yesButtonText: "Restart",
-            textLines: ["An update is ready", "Restart your app to start using it"],
-            titleText: "New Version",
+            yesButtonText: "Aceptar",
+            textLines: ["Presione aceptar para aplicar los cambios"],
+            titleText: "Nueva Version Disponible",
             repromptIntervalMs: hourInMS,
-            foregroundCheckIntervalMs: 0,
+            foregroundCheckIntervalMs: 1800000,
         };
         this.options = __assign(__assign({}, defaultOptions), options);
         reactNative.AppState.addEventListener("change", this.handleAppStateChange);
