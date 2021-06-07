@@ -8,7 +8,7 @@
     "build": "rollup -c",
     "start": "rollup -c -w"
   },
-  "repository": "https://github.com/app-sapiens/expo-ota-manager.git",
+  "repository": "https://github.com/phroeix/expo-ota-manager.git",
   "author": "tom@appsapiens.uk",
   "license": "MIT",
   "peerDependencies": {
