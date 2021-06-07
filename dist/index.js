@@ -75,7 +75,6 @@ var showConfirmAlert = function (title, message, confirmText, cancelText) {
             return [2 /*return*/, new Promise(function (resolve) {
                     reactNative.Alert.alert(title, message, [
                         { text: confirmText, onPress: function () { return resolve(true); } },
-                        { text: cancelText, onPress: function () { return resolve(false); }, style: "cancel" },
                     ], { onDismiss: function () { return resolve(false); } });
                 })];
         });
